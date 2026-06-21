@@ -26,7 +26,7 @@ module "eks" {
     ami_type       = "AL2023_x86_64_STANDARD"
     instance_types = ["t2.medium"]
 
-    attach_cluster_primary_security_group = true
+    attach_cluster_primary_security_group = false
   }
 
   eks_managed_node_groups = {
